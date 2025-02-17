@@ -10,7 +10,7 @@ export default function Nnhjsx() {
   }
   //hàm
   const fullName=(user)=>{
-        return "<h2>" +user .firstName + " " + user.lastName + "</h2>"
+        return "<h2>" +user.firstName + " " + user.lastName + "</h2>"
   }
 
   //element
@@ -30,7 +30,7 @@ export default function Nnhjsx() {
         </h1>
         {/* sử dụng biến element */}
         {element}
-        
+
         
     </div>
   )
