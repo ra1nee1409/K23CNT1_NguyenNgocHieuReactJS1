@@ -10,7 +10,7 @@ export default function Nnhjsx() {
   }
   //hàm
   const fullName=(user)=>{
-        return "<h2>" +user.firstName + " " + user.lastName + "</h2>"
+        return user.firstName + " " + user.lastName ;
   }
 
   //element
@@ -21,8 +21,17 @@ export default function Nnhjsx() {
         <hr></hr>
         <h3> welcome to, {name}       </h3>
     </div>
-  )
+  ) 
   
+  //ham
+  const Himyfriend = (name)=>{
+    if(name){
+        return <h3> welcome to {name}</h3>
+    }
+    else{
+        return <h3> welcome to feed-NTU - K23CNT1</h3>
+    }
+}
     return (
     <div>
         <h1>
@@ -30,8 +39,11 @@ export default function Nnhjsx() {
         </h1>
         {/* sử dụng biến element */}
         {element}
+        {/*biến không giá tri */}
+        {Himyfriend()}
+        {/*biến găn giá tri */}
+        {Himyfriend(name)}
 
-        
     </div>
   )
 }
