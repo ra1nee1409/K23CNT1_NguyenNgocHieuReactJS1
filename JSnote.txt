@@ -1,0 +1,24 @@
+//lenh khoi tao
+npx create-react-app@latest nnh-hello --force
+cd nnh-hello
+npm uninstall react react-dom
+npm install react@18 react-dom@18
+npm install
+npm start
+npm install web-vitals
+npm start
+
+//git 
+rm -rf Day05/.git
+git add Day05
+git commit -m"Up file"
+git push origin main
+
+// Hỗ trợ viết thẻ HTML trong ReactJS
+  "emmet.includeLanguages": {
+        "javascript": "javascriptreact",
+        "javascriptreact": "html",
+        "typescript": "typescriptreact",
+        "typescriptreact": "html"
+    },
+    "emmet.triggerExpansionOnTab": true
