@@ -9,7 +9,7 @@ class NnhclassfuncEven extends Component {
     }
     //Hàm xử lý sự kiện
     NnhbuttoncompHandleClick=()=> {
-        this.props.NnhonNnhDatatoapp("Dữ liệu từ component con - NnhbuttoncompHandleClick")
+        this.props.NnhonNnhDatatoapp("Dữ liệu từ component con - NnhbuttoncompHandleClick - abcxyz")
     }
     render() {
         return (
