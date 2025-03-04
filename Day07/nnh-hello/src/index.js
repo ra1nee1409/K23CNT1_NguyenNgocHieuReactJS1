@@ -7,7 +7,7 @@ import reportWebVitals from './reportWebVitals';
 const nnhroot = ReactDOM.createRoot(document.getElementById('nnhroot'));
 nnhroot.render(
   <React.StrictMode>
-    <NnhApp />
+    <NnhApp/>
   </React.StrictMode>
 );
 
