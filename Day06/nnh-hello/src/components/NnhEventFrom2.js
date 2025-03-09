@@ -33,7 +33,6 @@ class NnhEventFrom2 extends Component {
                         </select>
                     </label>
                     <input type='submit' value="Submit" />
-
                 </form>
             </div>
         );
