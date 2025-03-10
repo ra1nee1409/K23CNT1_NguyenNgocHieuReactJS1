@@ -38,10 +38,18 @@ class NnhApp extends Component {
         {nnhId:"SV003",nnhStudentName:"Le Ngoc Son",nnhAge:21,nnhGender:"Nam",nnhBirthday:"03/09/2005",nnhBirthPlace:"HD",nnhAddress:"125 Nguyen Xien"},
         {nnhId:"SV004",nnhStudentName:"Le Ngoc Son",nnhAge:21,nnhGender:"Nam",nnhBirthday:"03/09/2005",nnhBirthPlace:"HD",nnhAddress:"126 Nguyen Xien"},
       ],
+      nnhSelectedStudent: null,
     }
-  }s
-
+  }
+//ham xu ly su kien view student
+nnhHandleView =(selectedStudent)=>{
+  this.setState({
+    nnhSelectedStudent:selectedStudent
+  })
+}
   render() {
+    //Log sinh vien duoc chon
+console.log("Selected Student: ", this.state.nnhSelectedStudent);
     return (
       <div>
         <h1 className='text-center'>K23CNT1 Miniproject</h1>
@@ -52,12 +60,12 @@ class NnhApp extends Component {
               {/* header */}
               <NnhControl />
               {/* danh sach sien vien */}
-              <NnhStudenList  renderNnhStudents={this.state.nnhStudents} />
+              <NnhStudenList  renderNnhStudents={this.state.nnhStudents} onnnhHandleView={this.nnhHandleView} />
             </div>
           </div>
           <div className="col-5 grid-margin">
             {/* form */}
-            <NnhForm />
+            <NnhForm RenderNnhStuden={this.state.nnhSelectedStudent}  />
           </div>
         </div>
 

@@ -6,6 +6,13 @@ class NnhStudenList extends Component {
     super(props);
 
   }
+
+//ham xu ly su kien xem
+  nnhHandleView= (NnhStuden)=>{
+//chuyen du lieu len NnhApp
+  this.props.onnnhHandleView(NnhStuden);
+  }
+
   render() {
     //lay du lieu tu props cua NnhApp.js xuong
     let { renderNnhStudents } = this.props;
@@ -13,7 +20,13 @@ class NnhStudenList extends Component {
 
     //chuyen du lieu vao NnhStudent de hien thi
     let NnhElementStudent = renderNnhStudents.map((nnhItem,index)=>{
-      return <NnhStuden />
+      return( 
+      <NnhStuden 
+      key={index}
+      index={index + 1}
+      renderNnhStudents = {nnhItem} 
+      onnnhHandleView ={this.nnhHandleView}
+      />)
     })
     return (
       <div className="card-body">

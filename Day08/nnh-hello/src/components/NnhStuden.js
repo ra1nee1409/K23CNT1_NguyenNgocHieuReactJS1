@@ -1,20 +1,37 @@
 import React, { Component } from 'react';
 
 class NnhStuden extends Component {
+        constructor(props){
+            super(props);
+        
+        }
+        
+        //ham xu ly chuc nang xem
+
+        nnhHandleView = (NnhStuden)=>{
+            //chuyen len NnhStudenList
+            this.props.onnnhHandleView(NnhStuden);
+
+        }
+
     render() {
+        //lay doi tuong du lieu chuyen tu NnhStudenlist
+        let {renderNnhStudents, index} = this.props;
+        console.log("student:", renderNnhStudents)
         return (
             <>
                 <tr>
-                    <td>1</td>
-                    <td>SV001</td>
-                    <td>Nguyễn Văn A</td>
-                    <td>20</td>
-                    <td>Nam</td>
+                    <td>{index}</td>
+                    <td>{renderNnhStudents.nnhId}</td>
+                    <td>{renderNnhStudents.nnhStudentName}</td>
+                    <td>{renderNnhStudents.nnhAge}</td>
+                    <td>{renderNnhStudents.nnhGender}</td>
                     <td>
                         <div className="template-demo">
                             <button
                                 type="button"
                                 className="btn btn-danger btn-icon-text"
+                                onClick={()=>this.nnhHandleView(renderNnhStudents)}
                             >
                                 Xem
                             </button>
@@ -33,7 +50,7 @@ class NnhStuden extends Component {
                         </div>
                     </td>
                 </tr>
-                <tr>
+                {/* <tr>
                     <td>2</td>
                     <td>SV002</td>
                     <td>Nguyễn Văn B</td>
@@ -90,7 +107,7 @@ class NnhStuden extends Component {
                             </button>
                         </div>
                     </td>
-                </tr>
+                </tr> */}
             </>
         );
     }
