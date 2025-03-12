@@ -1,5 +1,7 @@
 //lenh khoi tao
 npx create-react-app@latest nnh-hello --force
+npx create-react-app@latest nnh-2310900037-k23cnt1-exam --force
+
 cd nnh-hello
 npm uninstall react react-dom
 npm install react@18 react-dom@18

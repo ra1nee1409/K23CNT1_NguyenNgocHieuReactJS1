@@ -1,0 +1,97 @@
+/*TỔNG QUAN*/
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa;
+  margin: 0;
+  padding: 0;
+}
+
+/*HEADER*/
+.header {
+  background-color: #007bff;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+/*CONTAINER CHÍNH*/
+.app-container {
+  width: 80%;
+  margin: 20px auto;
+}
+
+/*Bố cục 2 phần*/
+.content-wrapper {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+/*FORM THÊM TÀI KHOẢN*/
+.account-add {
+  flex: 1;
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.account-form input,
+.account-form select,
+.account-form button {
+  display: block;
+  width: 100%;
+  margin-bottom: 12px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+/* Nút Thêm */
+.account-form button {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.account-form button:hover {
+  background-color: #218838;
+}
+
+/*  DANH SÁCH TÀI KHOẢN  */
+.account-list {
+  flex: 2;
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.account-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+.account-table th,
+.account-table td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: left;
+  font-size: 16px;
+}
+
+.account-table th {
+  background-color: #007bff;
+  color: white;
+}
+
+.account-table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
