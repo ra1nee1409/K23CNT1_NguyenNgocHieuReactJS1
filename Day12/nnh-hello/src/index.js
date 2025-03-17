@@ -3,12 +3,12 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
 import NnhApp from './NnhApp';
-import { BrowserRouter } from 'react-router-dom'; 
+import { BrowserRouter } from 'react-router-dom';
 const nnhroot = ReactDOM.createRoot(document.getElementById('nnhroot'));
-nnhroot.render(  
+nnhroot.render(
   <React.StrictMode>
     <BrowserRouter>
-    <NnhApp />
+      <NnhApp />
     </BrowserRouter>
   </React.StrictMode>
 );
