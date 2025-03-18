@@ -2,6 +2,8 @@ import React from 'react'
 import NnhReadApiLocal from './components/NnhReadApiLocal';
 import NnhReadMockApi from './components/NnhReadMockApi';
 import NnhCreateMockApi from './components/NnhCreateMockApi';
+import './style.css';
+
 
 export default function NnhApp() {
   return (
@@ -12,7 +14,6 @@ export default function NnhApp() {
         <hr/>
         <h1>Đọc dữ liệu từ mockAPI</h1>
         <NnhReadMockApi/>
-
         <NnhCreateMockApi/>
     </div>
   )

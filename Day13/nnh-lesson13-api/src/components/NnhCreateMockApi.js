@@ -2,6 +2,7 @@
 
 import React, { useState } from 'react'
 import axios from 'axios'
+
 export default function NnhCreateMockApi() {
     //khoi tao state
     const [nnhfullName,setNnhfullName] = useState ('')
@@ -25,40 +26,37 @@ export default function NnhCreateMockApi() {
         })
     }
     return (
-    <div className='alert alert-info'>
+    <div className='form-container'>
         <h2>Thêm mới user</h2>
         <hr/>
         <form>
-            <div className='row mb-1'>
-                <label htmlFor='nnhfullName'>FullName</label>
+            <div className='form-group'>
+                <label htmlFor='nnhfullName'>Full Name</label>
                 <input type='text' name='nnhfullName' id='nnhfullName' 
                 value={nnhfullName}
-                onChange={(ev)=>setNnhfullName(ev.target.value)} />
+                onChange={(ev)=>setNnhfullName(ev.target.value)} 
+                className='input-field' />
             </div>
 
-            <div className='row mb-1'>
+            <div className='form-group'>
                 <label htmlFor='nnhAge'>Age</label>
                 <input type='number' name='nnhAge' id='nnhAge' value={nnhAge}
-                onChange={(ev)=>setNnhAge(ev.target.value)} />
+                onChange={(ev)=>setNnhAge(ev.target.value)} 
+                className='input-field' />
             </div>
 
-            <div className='row mb-1'>
+            <div className='form-group'>
                 <label htmlFor='nnhActive'>Active</label>
-                <select name='nnhActive' id='nnhActive' value={nnhActive} onChange={(ev) => setNnhActive(ev.target.value)}>
+                <select name='nnhActive' id='nnhActive' value={nnhActive} 
+                onChange={(ev) => setNnhActive(ev.target.value)} 
+                className='input-field'>
                     <option value='true'>Hoạt động</option>
                     <option value='false'>Khoá</option>
                 </select>
             </div>
             
-            <button onClick={nnhHandleSubmit}>Create</button>
+            <button className='submit-button' onClick={nnhHandleSubmit}>Create</button>
         </form>
     </div>
   )
 }
-// {/* <div className='row mb-1'>
-//                 <label htmlFor='nnhActive'>Active</label>
-//                 <select name='nnhActive' id='nnhActive'>
-//                     <option value='true'>Hoạt động</option>
-//                     <option value='false'>Khoá</option>
-//                 </select>
-//             </div> */}
