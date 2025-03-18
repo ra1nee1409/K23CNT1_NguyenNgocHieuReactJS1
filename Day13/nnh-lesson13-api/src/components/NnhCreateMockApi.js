@@ -6,7 +6,7 @@ export default function NnhCreateMockApi() {
     //khoi tao state
     const [nnhfullName,setNnhfullName] = useState ('')
     const [nnhAge,setNnhAge] = useState (0)
-    const [nnhActive,setNnhActive] = useState (true)
+    const [nnhActive,setNnhActive] = useState ('true')
 
     //api post
     const nnhCreateUserApi = "https://67d98ea700348dd3e2ab9ea0.mockapi.io/k23cnt1_NguyenNgocHieu/nnh_users";
@@ -21,7 +21,7 @@ export default function NnhCreateMockApi() {
     axios
         .post(nnhCreateUserApi, nnhNewUser)
         .then((nnh_response)=>{
-            
+
         })
     }
     return (
@@ -30,37 +30,35 @@ export default function NnhCreateMockApi() {
         <hr/>
         <form>
             <div className='row mb-1'>
-                <label for="nnhfullName">FullName</label>
-                <input type="text" name='nnhfullName' id='nnhfullName' 
+                <label htmlFor='nnhfullName'>FullName</label>
+                <input type='text' name='nnhfullName' id='nnhfullName' 
                 value={nnhfullName}
                 onChange={(ev)=>setNnhfullName(ev.target.value)} />
             </div>
 
             <div className='row mb-1'>
-                <label for="nnhAge">Age</label>
-                <input type="number" name='nnhAge' id='nnhAge' value={nnhAge}
+                <label htmlFor='nnhAge'>Age</label>
+                <input type='number' name='nnhAge' id='nnhAge' value={nnhAge}
                 onChange={(ev)=>setNnhAge(ev.target.value)} />
             </div>
 
             <div className='row mb-1'>
-                <label for="nnhActive">Active</label>
-                <input type="radio" name='nnhActive' id='nnhActive_hd' value={'true'} 
-                onChange={(ev)=>setNnhActive(ev.target.value)} />
-                    <label for="nnhActive_hd">Hoạt động </label>
-                <input type="radio" name='nnhActive' id='nnhActive_kh' value={'false'} 
-                onChange={(ev)=>setNnhActive(ev.target.value)} />
-                    <label for="nnhActive_kh">Khoá </label>
-            </div>
-
-            {/* <div className='row mb-1'>
                 <label htmlFor='nnhActive'>Active</label>
-                <select name='nnhActive' id='nnhActive'>
+                <select name='nnhActive' id='nnhActive' value={nnhActive} onChange={(ev) => setNnhActive(ev.target.value)}>
                     <option value='true'>Hoạt động</option>
                     <option value='false'>Khoá</option>
                 </select>
-            </div> */}
+            </div>
+            
             <button onClick={nnhHandleSubmit}>Create</button>
         </form>
     </div>
   )
 }
+// {/* <div className='row mb-1'>
+//                 <label htmlFor='nnhActive'>Active</label>
+//                 <select name='nnhActive' id='nnhActive'>
+//                     <option value='true'>Hoạt động</option>
+//                     <option value='false'>Khoá</option>
+//                 </select>
+//             </div> */}
