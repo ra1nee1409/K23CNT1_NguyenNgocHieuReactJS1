@@ -15,7 +15,11 @@ rm -rf Day05/.git
 git add Day05
 git commit -m"Up file"
 git push origin main
-
+//localapi
+npm init --yes  
+npm install -g json-server  
+npm install --save axios
+npm install react-router-dom --save
 // Hỗ trợ viết thẻ HTML trong ReactJS
   "emmet.includeLanguages": {
         "javascript": "javascriptreact",

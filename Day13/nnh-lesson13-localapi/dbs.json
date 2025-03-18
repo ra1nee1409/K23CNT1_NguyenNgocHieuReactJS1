@@ -1,0 +1,30 @@
+{
+    "users":[
+        {
+            "fullName":"Nguyen Ngoc Hieu",
+            "age":"20",
+            "class":"K23CNT1"
+        },
+        {
+            "fullName":"Nguyen Ngoc Hien",
+            "age":"20",
+            "class":"K23CNT3"
+        },
+        {
+            "fullName":"Tran Tien Anh",
+            "age":"20",
+            "class":"K23CNT2"
+        },
+        {
+            "fullName":"Le Ngoc Son",
+            "age":"20",
+            "class":"K23CNT4"
+        }
+    ],
+    "student":[
+        {
+            "studentId":"SV001",
+            "studentName":"Nguyen Quang Tam"
+        }
+    ]
+}
