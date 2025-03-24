@@ -1,0 +1,222 @@
+/* Reset CSS */
+body {
+  margin: 0;
+  font-family: 'Roboto', Arial, sans-serif;
+  background-color: #f3f4f6;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Container Styling */
+.container {
+  max-width: 1200px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+/* Header Styling */
+h2 {
+  text-align: center;
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #2c3e50;
+}
+
+/* Form Styling */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Label Styling */
+label {
+  font-size: 16px;
+  font-weight: 600;
+  color: #555;
+}
+
+/* Input Field Styling */
+input[type="text"],
+input[type="email"],
+button {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  transition: box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+/* Checkbox Styling */
+input[type="checkbox"] {
+  margin-right: 10px;
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+/* Input Hover & Focus */
+input[type="text"]:focus,
+input[type="email"]:focus {
+  outline: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+
+/* Button Styling */
+button {
+  padding: 12px;
+  background-color: #1abc9c;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background-color: #16a085;
+  transform: translateY(-2px);
+}
+
+/* Table Styling */
+.table {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.table thead {
+  background-color: #34495e;
+  color: white;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.table thead th {
+  padding: 10px;
+  border-bottom: 2px solid #2c3e50;
+}
+
+.table tbody td {
+  padding: 12px;
+  border-bottom: 1px solid #ddd;
+  color: #555;
+}
+
+.table tbody tr:hover {
+  background-color: #f9f9f9;
+}
+
+/* Buttons in Table */
+.btn {
+  padding: 8px 12px;
+  border-radius: 8px;
+  font-size: 14px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary {
+  background-color: #3498db;
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: #2980b9;
+}
+
+.btn-danger {
+  background-color: #e74c3c;
+  color: white;
+}
+
+.btn-danger:hover {
+  background-color: #c0392b;
+}
+
+/* Navbar Styling */
+.Nnh-navbar {
+  background: white;
+  padding: 14px 24px;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+  margin-bottom: 30px;
+  border: 1px solid #e5e7eb;
+}
+
+.Nnh-navbar ul {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.Nnh-navbar ul li a {
+  color: #333;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.Nnh-navbar ul li a:hover {
+  color: #0072ff;
+}
+
+.Nnh-logo {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* Footer Styling */
+.Nnh-footer {
+  margin-top: 60px;
+  text-align: center;
+  padding: 16px;
+  background-color: #f3f4f6;
+  color: #555;
+  font-size: 14px;
+}
+
+/* New Book Section */
+.new-book {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.new-book h3 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #2c3e50;
+  margin-bottom: 20px;
+}
+
+.new-book-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.new-book img {
+  width: 197px;
+  height: 295px;
+  margin: 10px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}

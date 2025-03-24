@@ -31,3 +31,10 @@ npm install react-router-dom --save
 
 
     rafce
+
+
+
+
+
+    npm install framer-motion 
+    npm install lucide-react
